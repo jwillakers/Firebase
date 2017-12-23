@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Train Schedule</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <!-- css Reference -->
+    <link rel="stylesheet" type="text/css" href="assets/css/train.css">
+
+  </head>
+  <body>
+    <!-- Employee Tracker -->
+    <div class="container">
+      <!-- Jumbotron -->
+      
+      <div class="jumbotron">
+
+      <!-- fancy animated headline -->
+
+        <h1><span>T</span>
+          <span>r</span>
+          <span>a</span>
+          <span>i</span>
+          <span>n</span>
+          <span>&nbsp;</span>
+          <span>S</span>
+          <span>c</span>
+          <span>h</span>
+          <span>e</span>
+          <span>d</span>
+          <span>u</span>
+          <span>l</span>
+          <span>e</span>
+          </h1>
+        <!-- <h1>A Train is Coming</h1> -->
+        <p>Schedule your commute or ride for the adventure.</p>
+        <p>Find your train departure and arrival 24 hours a day.</p>
+        <!-- <p><a class = "btn btn-primary btn-lg" href = "#" role = "button">Learn.</a></p> -->
+      </div>
+
+      <!-- form -->
+      <div class="row">
+        <div class="col-lg-12">
+        <!-- Current Employees-->
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title"><strong>Current Train Schedule</strong></h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-hover" id='employee-table'>
+                <thead>
+                  <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Add Employee  -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title"><strong>Add Train</strong></h3>
+            </div>
+            <div class="panel-body">
+              <!-- Entry Form -->
+              <form>
+                <div class="form-group">
+                  <label for="employee-name-input">Train Name</label>
+                  <input class="form-control" id="employee-name-input" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="role-input">Destination</label>
+                  <input class="form-control" id="role-input" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="start-input">First Train Time (HH:mm - military time)</label>
+                  <input class="form-control" id="start-input" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="rate-input">Frequency(min)</label>
+                  <input class="form-control" id="rate-input" type="text">
+                </div>
+                <button class="btn btn-primary" id="add-employee-btn" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js" href = "assets/javascript/train.js"></script>
+
+  <!-- Link to Moment.js should go here -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+  </body>
+</html>
