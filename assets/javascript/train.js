@@ -30,7 +30,7 @@
     // 16 % 7 = 2 (Modulus is the remainder)
     // 7 - 2 = 5 minutes away
     // 5 + 3:16 = 3:21
-alert("hi")
+// alert("hi")
 // Assumptions
     var tFrequency = 3;
 
